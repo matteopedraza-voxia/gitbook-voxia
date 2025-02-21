@@ -1,0 +1,1271 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/campaigns/{campaignId}/contacts": {
+      "post": {
+        "operationId": "CampaignPublicController_createContacts",
+        "summary": "Create contacts for a campaign",
+        "description": "Adds new contacts to the specified campaign. Optionally fixes US phone numbers by adding a leading 1 if not present.",
+        "parameters": [
+          {
+            "name": "campaignId",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fixUSPhoneNumber",
+            "required": false,
+            "in": "query",
+            "description": "Will add 1 to the phone number if it doesn't starts with 1",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CampaignContactsCreateZodDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["success"]
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "requested": {
+                          "type": "number"
+                        },
+                        "added": {
+                          "type": "number"
+                        },
+                        "modified": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "CampaignPublicController_archiveContactsByCampaignId",
+        "summary": "Archive all contacts in campaign",
+        "description": "Archives all contacts associated with a given campaign id.",
+        "parameters": [
+          {
+            "name": "campaignId",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["success"]
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "archivedCount": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      },
+      "get": {
+        "operationId": "CampaignPublicController_getCampaignContacts",
+        "summary": "Get all campaign contacts by campaign id.",
+        "description": "Get all campaign contacts. Returns an array of ContactPublicDto. Supports pagination, status filtering and sorting options.",
+        "parameters": [
+          {
+            "name": "campaignId",
+            "required": true,
+            "in": "path",
+            "description": "Id of the campaign as a string ObjectId value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "archived",
+            "required": false,
+            "in": "query",
+            "description": "Archived filter. Default is false.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "sortDirection",
+            "required": false,
+            "in": "query",
+            "description": "Sorting direction. Default is ascending. Possible values: 'asc' or 'desc'.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sortAttribute",
+            "required": false,
+            "in": "query",
+            "description": "Sorting attribute. Name of the entity field to sort by.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "statuses",
+            "required": false,
+            "in": "query",
+            "description": "Status filter. Default is all statuses.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "perPage",
+            "required": false,
+            "in": "query",
+            "description": "Max page size. Default is 50.",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "description": "Page number. Default is 0.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContactPublicDto"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/campaigns/{campaignId}/contacts/bulk": {
+      "delete": {
+        "operationId": "CampaignPublicController_archiveContactsByIds",
+        "summary": "Archive contacts by contact ids",
+        "description": "Archive contacts associated with a given contact ids array.",
+        "parameters": [
+          {
+            "name": "campaignId",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArchiveContactsZodDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["success"]
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "archivedCount": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/campaigns/{campaignId}/contacts/{contactId}": {
+      "delete": {
+        "operationId": "CampaignPublicController_archiveContactById",
+        "summary": "Archive contact by contact id",
+        "description": "Archive contact associated with a given contact id.",
+        "parameters": [
+          {
+            "name": "campaignId",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "contactId",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["success"]
+                    },
+                    "data": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/campaigns/{campaignId}/contacts/phoneNumber/{phoneNumber}": {
+      "delete": {
+        "operationId": "CampaignPublicController_archiveContactByPhoneNumber",
+        "summary": "Archive contact by contact phone number",
+        "description": "Archive contact associated with a given contact phone number.",
+        "parameters": [
+          {
+            "name": "campaignId",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "phoneNumber",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fixUSPhoneNumber",
+            "required": false,
+            "in": "query",
+            "description": "Will add 1 to the phone number if it doesn't starts with 1",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["success"]
+                    },
+                    "data": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/campaigns": {
+      "get": {
+        "operationId": "CampaignPublicController_getCampaignsByOrganizationId",
+        "summary": "Get all campaigns by organisation id.",
+        "description": "Get all campaigns by organisation id. Returns an array of CampaignPublicDto. Supports pagination.",
+        "parameters": [
+          {
+            "name": "organizationId",
+            "required": true,
+            "in": "query",
+            "description": "Id of the organization as a string ObjectId value.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CampaignPublicDto"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/campaigns/{campaignId}": {
+      "get": {
+        "operationId": "CampaignPublicController_getCampaign",
+        "parameters": [
+          {
+            "name": "campaignId",
+            "required": true,
+            "in": "path",
+            "description": "Id of the campaign as a string ObjectId value.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CampaignPublicDto"
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/campaigns/{campaignId}/contacts/{contactId}/calls": {
+      "get": {
+        "operationId": "CampaignPublicController_getCampaignContactCalls",
+        "summary": "Get all calls by campaign id and contact id.",
+        "description": "Get all calls by campaign id and contact id. Returns an array of PaginatedCallPublicDto. Supports pagination.",
+        "parameters": [
+          {
+            "name": "campaignId",
+            "required": true,
+            "in": "path",
+            "description": "Id of the campaign as a string ObjectId value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "contactId",
+            "required": true,
+            "in": "path",
+            "description": "Id of the contact as a string ObjectId value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "perPage",
+            "required": false,
+            "in": "query",
+            "description": "Max page size. Default is 50.",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "description": "Page number. Default is 1.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PaginatedCallPublicDto"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/campaigns/{campaignId}/calls": {
+      "get": {
+        "operationId": "CampaignPublicController_getCampaignCalls",
+        "summary": "Get all calls by campaign id.",
+        "description": "Get all calls by campaign id. Returns an array of CallPublicDto. Supports pagination.",
+        "parameters": [
+          {
+            "name": "campaignId",
+            "required": true,
+            "in": "path",
+            "description": "Id of the campaign as a string ObjectId value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "description": "Page number. Default is 0.",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "perPage",
+            "required": false,
+            "in": "query",
+            "description": "Max page size. Default is 50.",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": ["error"]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CallPublicDto"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/campaigns/{campaignId}/calls/{callId}/webhook-payload": {
+      "get": {
+        "operationId": "CampaignPublicController_getCampaignCallWebhookPayload",
+        "summary": "Get call webhook payload by campaign id and call id.",
+        "description": "Get call webhook payload by campaign id and call id.",
+        "parameters": [
+          {
+            "name": "campaignId",
+            "required": true,
+            "in": "path",
+            "description": "Id of the campaign as a string ObjectId value.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "callId",
+            "required": true,
+            "in": "path",
+            "description": "Id of the call as a string ObjectId value.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": ["Campaigns"],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "Voxia Public API",
+    "description": "Voxia Public API",
+    "version": "0.1",
+    "contact": {}
+  },
+  "tags": [],
+  "servers": [
+    {
+      "url": "https://api.voxia.ai"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "Authorization": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization"
+      }
+    },
+    "schemas": {
+      "CampaignContactsCreateZodDto": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "phoneNumber": {
+              "type": "string",
+              "minLength": 7,
+              "maxLength": 20,
+              "pattern": "^\\+?[\\d()-]+$"
+            },
+            "data": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "archived": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          "required": ["name", "phoneNumber", "data"]
+        }
+      },
+      "ArchiveContactsZodDto": {
+        "type": "object",
+        "properties": {
+          "contactIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["contactIds"]
+      },
+      "CampaignCallParamsPublicDto": {
+        "type": "object",
+        "properties": {
+          "phonesFrom": {
+            "description": "The array of the available phone numbers.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "timezone": {
+            "type": "string",
+            "description": "The timezone of the campaign."
+          },
+          "daysOfWeek": {
+            "description": "Days of the week the campaign is active.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "language": {
+            "type": "string",
+            "description": "The language of the calls."
+          },
+          "approvedCountries": {
+            "description": "The array of the approved countries to call.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "phonesFrom",
+          "timezone",
+          "daysOfWeek",
+          "language",
+          "approvedCountries"
+        ]
+      },
+      "CampaignPublicDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The id of the campaign. string representation of a ObjectId."
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the campaign."
+          },
+          "active": {
+            "type": "boolean",
+            "description": "The status of the campaign."
+          },
+          "startedAt": {
+            "type": "string",
+            "description": "The date and time the campaign started in ISO string format.."
+          },
+          "finishedAt": {
+            "type": "string",
+            "description": "The date and time the campaign finished in ISO string format."
+          },
+          "callParams": {
+            "description": "The call parameters of the campaign.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/CampaignCallParamsPublicDto"
+              }
+            ]
+          },
+          "organizationId": {
+            "type": "string",
+            "description": "The id of the organization. string representation of a ObjectId."
+          },
+          "companyInfo": {
+            "type": "string",
+            "description": "The company info."
+          },
+          "incomingPhoneNumber": {
+            "type": "string",
+            "description": "The incoming phone number of the campaign."
+          },
+          "webhookUrl": {
+            "type": "string",
+            "description": "The webhook url of the campaign."
+          },
+          "slackUrl": {
+            "type": "string",
+            "description": "The slack notifications url of the campaign."
+          },
+          "isIncoming": {
+            "type": "boolean",
+            "description": "Boolean value defines if the campaign is incoming or outgoing. True if the campaign is incoming, false if the campaign is outgoing."
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "active",
+          "startedAt",
+          "finishedAt",
+          "callParams",
+          "organizationId",
+          "companyInfo",
+          "webhookUrl",
+          "slackUrl",
+          "isIncoming"
+        ]
+      },
+      "ContactPublicDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The id of the contact. string representation of a ObjectId."
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the contact."
+          },
+          "phoneNumber": {
+            "type": "string",
+            "description": "The phone number of the contact."
+          },
+          "campaignId": {
+            "type": "string",
+            "description": "The id of the campaign. string representation of a ObjectId."
+          },
+          "status": {
+            "type": "string",
+            "description": "The status of the contact."
+          },
+          "failedReason": {
+            "type": "string",
+            "description": "The reason for failing the call."
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "The date and time the contact was created in ISO format."
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "phoneNumber",
+          "campaignId",
+          "status",
+          "createdAt"
+        ]
+      },
+      "CallEventPublicDto": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "The type of the event.",
+            "examples": ["SMS", "MEETING", "FORWARD"]
+          },
+          "data": {
+            "type": "object",
+            "description": "The specific data of the event."
+          }
+        },
+        "required": ["type"]
+      },
+      "GoalPublicDto": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "The description of the goal"
+          },
+          "reached": {
+            "type": "boolean",
+            "description": "The status of the goal. Was it reached or not."
+          }
+        },
+        "required": ["description", "reached"]
+      },
+      "CallPublicDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The id of the call. string representation of a ObjectId."
+          },
+          "sessionId": {
+            "type": "string",
+            "description": "The id of the session. string representation of a ObjectId."
+          },
+          "campaignId": {
+            "type": "string",
+            "description": "The id of the campaign. string representation of a ObjectId."
+          },
+          "organizationId": {
+            "type": "string",
+            "description": "The id of the organization. string representation of a ObjectId."
+          },
+          "duration": {
+            "type": "number",
+            "description": "The duration of the call in seconds."
+          },
+          "hangUpReason": {
+            "type": "string",
+            "description": "The reason for hanging up the call."
+          },
+          "status": {
+            "type": "string",
+            "description": "The status of the call."
+          },
+          "failedReason": {
+            "type": "string",
+            "description": "The reason for failing the call."
+          },
+          "recordingUrl": {
+            "type": "string",
+            "description": "The url of the recording."
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "The datetime the call object was created in ISO string format.",
+            "example": "2021-09-01T00:00:00.000Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "The datetime the call was updated last time in ISO string format.",
+            "example": "2021-09-01T00:00:00.000Z"
+          },
+          "phoneFrom": {
+            "type": "string",
+            "description": "The phone number."
+          },
+          "phoneTo": {
+            "type": "string",
+            "description": "The phone number."
+          },
+          "messages": {
+            "description": "The ordered messages of the call.",
+            "items": {
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "contactId": {
+            "type": "string",
+            "description": "Id of the contact within the system. String representation of a ObjectId."
+          },
+          "summary": {
+            "type": "object",
+            "description": "The summary object of the call."
+          },
+          "events": {
+            "description": "The scripted events that successfully occurred during the call.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CallEventPublicDto"
+            }
+          },
+          "goal": {
+            "description": "The goal object of the call.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/GoalPublicDto"
+              }
+            ]
+          },
+          "twilioAccountSid": {
+            "type": "string",
+            "description": "Twilio account sid."
+          },
+          "incomingCall": {
+            "type": "boolean",
+            "description": "This boolean value indicates the call direction: true for incoming calls and false for outgoing calls."
+          }
+        },
+        "required": [
+          "id",
+          "sessionId",
+          "campaignId",
+          "organizationId",
+          "duration",
+          "hangUpReason",
+          "status",
+          "failedReason",
+          "recordingUrl",
+          "createdAt",
+          "updatedAt",
+          "phoneFrom",
+          "phoneTo",
+          "messages",
+          "contactId",
+          "summary",
+          "events",
+          "goal",
+          "twilioAccountSid",
+          "incomingCall"
+        ]
+      },
+      "PaginatedCallPublicDto": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "description": "Array of CallPublicDto objects",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CallPublicDto"
+            }
+          },
+          "total": {
+            "type": "number",
+            "description": "Total number of records"
+          },
+          "page": {
+            "type": "number",
+            "description": "Current page number"
+          },
+          "perPage": {
+            "type": "number",
+            "description": "Number of records per page"
+          }
+        },
+        "required": ["data", "total", "page", "perPage"]
+      }
+    }
+  }
+}
