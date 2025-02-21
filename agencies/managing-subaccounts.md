@@ -22,7 +22,7 @@ Subaccounts allow organizations to manage multiple accounts under one main accou
 2. **Enable Subaccounts**: At the top right, press on the `Subaccounts` option.
 3. **Create Subaccount**: Click on `Create subaccount`, and enter a name for the subaccount and click on `Create`.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-02-18 at 10.13.03.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-06-03 at 12.43.46 2 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Switching Between Subaccounts
 

@@ -23,8 +23,6 @@ Once you enter your campaign in the Voxia platform, you are greeted with a compr
 * **Campaign Status**: At the top, you can see the name of the campaign and a colored dot indicating the campaign's current status (e.g., green for active, orange for stopped).
 * **Contact Summary**: A bar graph displays the total number of contacts broken down by status: Interested, Not interested, Unreached, Failed, Do not call, Wrong number, and Call me later. This provides a quick snapshot of your campaign's engagement levels.
 * **Contact List**: Below the summary, there is a detailed list of contacts including their name, phone number, the number of call attempts, the date of the last attempt, call duration, and the status of the last call (e.g., Interested, Not Interested, Wrong Number).
-* **Filtering:**
-* **Export Contacts:**
 * **Campaign Statistics**:
   * **Total Contacts**: The total number of contacts in the campaign.
   * **Total Calls**: The total number of calls made during the campaign.
@@ -33,9 +31,3 @@ Once you enter your campaign in the Voxia platform, you are greeted with a compr
 * **Functionality Buttons**: At the top right, you have buttons for various actions such as editing the campaign, testing calls, and adding new contacts.
 * **Navigation Panel**: On the left side, there's a navigation panel that allows you to quickly access different parts of the Voxia platform such as new campaign creation, campaign overview, integrations, API keys, and phone number management.
 * **User Information**: At the bottom left, you can see your user role and a unique identifier for your user account.
-* **Archive**:
-* **Sorting:**
-
-
-
-* **Test Call:**

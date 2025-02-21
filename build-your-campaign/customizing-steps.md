@@ -18,7 +18,7 @@ This guide provides detailed instructions on how to personalize the dialogue and
 
 * **Add Call Steps**: Click the `New Step` button to begin adding steps that the assistant will follow during the call.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-02-17 at 17.48.57.png" alt=""><figcaption><p>You can add more than one step</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 * **Schedule Meetings**:
   * Press the `Schedule a Meeting` button.

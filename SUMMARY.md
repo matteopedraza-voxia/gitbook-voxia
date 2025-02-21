@@ -17,14 +17,14 @@
 * [Uploading Contacts](using-voxia/uploading-contacts.md)
 * [Key Questions](using-voxia/key-questions.md)
 * [Inside Your Campaign](using-voxia/inside-your-campaign.md)
-* [Reporting Issues](using-voxia/reporting-issues.md)
+* [Reporting Call Issues](using-voxia/reporting-call-issues.md)
 
 ## Integrations
 
 * [Bring Your Own Twilio](integrations/bring-your-own-twilio.md)
 * [Bring Your Own Carrier](integrations/bring-your-own-carrier.md)
 * [Add Telnyx Phone Numbers](integrations/add-telnyx-phone-numbers.md)
-* [Cal.com](integrations/cal.com.md)
+* [Cal.com Integration](integrations/cal.com-integration.md)
 * [Slack Integration](integrations/slack-integration.md)
 
 ## Agencies

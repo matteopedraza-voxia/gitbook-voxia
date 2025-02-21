@@ -27,6 +27,8 @@ To integrate your own SIP carrier with Voxia, follow the steps below:
 
 
 
+<figure><img src="../.gitbook/assets/New SIP.png" alt=""><figcaption></figcaption></figure>
+
 ### Step 2: Add SIP Details
 
 * **SIP Name**: Enter a unique name for your SIP connection.
