@@ -36,7 +36,9 @@ Voxia efficiently manages both inbound and outbound calls. Follow this step-by-s
   * Click the **Generate** button.
   * Wait for the campaign generation to complete. During this time, you can edit scenarios or set up your campaign using the top navigation bar.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-14 at 12.14.55 (1).png" alt=""><figcaption></figcaption></figure>
+
+
 
 {% hint style="info" %}
 For detailed instructions on how to build and customize your script, refer to our [Script Building Guide](campaign-script.md).
