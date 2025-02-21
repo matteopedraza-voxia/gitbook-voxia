@@ -16,12 +16,14 @@ layout:
 
 Integrate Cal.com with Voxia to seamlessly schedule meetings. This integration allows you to leverage the power of Cal.com’s scheduling capabilities directly through Voxia’s voice agents, streamlining your scheduling process and improving efficiency.&#x20;
 
+Seamlessly schedule meetings by integrating Cal.com with Voxia. This integration enables you to leverage Cal.com’s scheduling capabilities directly through Voxia’s voice agents, streamlining the scheduling process and improving efficiency.
+
 ### Connecting Cal.com to Voxia
 
 * **Navigate to the Integrations Tab:** Sign into your Voxia account and go to the "Integrations" tab.
-* **Connect Cal.com:** Click on `Connect` next to the Cal.com integration. A new window will open prompting you to enter your **API Key** from Cal.com to authorize Voxia.
+* **Connect Cal.com:** Click on `Connect` under to the Cal.com integration. A new window will open prompting you to enter your **API Key** from Cal.com to authorize Voxia.
 
-<figure><img src="../.gitbook/assets/Untitled design.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-14 at 11.05.17.png" alt=""><figcaption><p>Paste your Cal.com API key</p></figcaption></figure>
 
 {% hint style="info" %}
 **If you do not have an API Key, follow these steps to create one:**
@@ -38,13 +40,13 @@ Integrate Cal.com with Voxia to seamlessly schedule meetings. This integration a
 ### Adding a Cal.com Step in a Voxia Campaign
 
 {% hint style="warning" %}
-Note that to add this step, each contact must have an **`Email`**.
+Note that to add this step, each contact must have an **`Email`.**
 {% endhint %}
 
 * Press the `Schedule a Meeting` button.
-* Determine the **assistant's spoken content** before offering time slots.
+* Determine the **assistant's spoken content** before offering time slots
 * Choose the relevant **event** from the dropdown.
-* Set how many days in advance clients can schedule meetings by setting the **'Schedule days ahead'** field.
+* Set how many days in advance clients can schedule meetings by setting the '**Schedule days ahead**' field.
 
 ### Handling No Available Time Slots
 
@@ -52,7 +54,9 @@ Note that to add this step, each contact must have an **`Email`**.
 * **Use Fallback Phrase**: Allows the assistant to use a custom fallback phrase.
   * Enter the phrase in the provided text field.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-08-16 at 19.23.14.png" alt=""><figcaption></figcaption></figure>
+### Handling No Available Time Slots
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-14 at 11.14.42.png" alt=""><figcaption><p>Example on how to handle no available timeslots.</p></figcaption></figure>
 
 ### Verifying Cal.com Settings <a href="#verifying-calendly-settings" id="verifying-calendly-settings"></a>
 
@@ -60,7 +64,7 @@ To ensure seamless integration with Voxia, verify the event settings within Cal.
 
 1. Log in to your **Cal.com**&#x20;
 2. Navigate to the event you want to integrate with Voxia.
-3. Open the **Advanced** tab within the event settings.
+3. Go to the **Advanced** tab within the event settings.
 4. Ensure **additional questions are optional** (events with required questions cannot be used in Voxia).
 
 <div align="center"><figure><img src="../.gitbook/assets/Screenshot 2024-08-16 at 20.36.15.png" alt=""><figcaption></figcaption></figure></div>
@@ -70,11 +74,11 @@ To ensure seamless integration with Voxia, verify the event settings within Cal.
 * **Access Event Settings:** Navigate to your Cal.com account and select the event integrated with Voxia and go to the _**Advanced**_ tab within the event settings.
 * **Add a New Question:** Scroll to the **Booking questions** and click `Add a question`.
 * **Configure the Question Settings:**
-  * Set the **Input type** to 'Short Text'.
-  * For the **Identifier**, enter 'phone'.
-  * Ensure the **Disable input if the URL identifier is prefilled** option is unchecked.
-  * Set **Required** to 'No'.
-* **Customization Options:** Only **Label** and **Placeholder** fields are customizable. Adjust these as necessary to fit the context of your event.
+  * **Input type:** Short Text
+  * **Identifier:** phone
+  * **Disable input if the URL identifier is prefilled:** unchecked
+  * **Required:** No
+  * **Customization Options:** Only **Label** and **Placeholder** fields are customizable. Adjust these as necessary to fit the context of your event.
 * **Save the Configuration:**
   * Click `Add` to include the field in your invite.
   * Click `Save` at the top right of the event settings to apply changes.
