@@ -24,6 +24,8 @@ Subaccounts allow organizations to manage multiple accounts under one main accou
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-06-03 at 12.43.46 2 (1).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-18 at 10.13.03.png" alt=""><figcaption><p>Create a Subaccount.</p></figcaption></figure>
+
 ### Switching Between Subaccounts
 
 Once you have created your subaccount, you can switch between your main account and any subaccount easily:
@@ -33,7 +35,7 @@ Once you have created your subaccount, you can switch between your main account 
   * Click the arrow down next to your organization's name at the top left.
   * Select the subaccount you wish to access from the dropdown menu.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-06-03 at 14.00.38.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-18 at 10.20.14.png" alt=""><figcaption></figcaption></figure>
 
 ### Inviting Members to a Subaccount
 
@@ -43,8 +45,11 @@ After entering your subaccount:
 2. **Send Invitations**:
    * Enter the email addresses of the individuals you want to invite.
    * Click on `Invite`. An invitation will be sent to them to join the new subaccount.
+   * Select the desired permission level for the member.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-06-03 at 13.28.32.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-18 at 10.31.05 (1).png" alt=""><figcaption><p>Invite a Member.</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-18 at 10.35.02 (1).png" alt=""><figcaption><p>Change member permissions.</p></figcaption></figure>
 
 {% hint style="info" %}
 #### Managing Member Permissions
