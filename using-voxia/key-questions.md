@@ -37,6 +37,10 @@ There are two types of Key Questions:
 * Find the step number located on the left side of the step you want to summarize.
 * Click on the step number. This action will open a window to set the Key for the step.
 
+<figure><img src="broken-reference" alt=""><figcaption><p>Press the star icon left to the step to create your Key Question.</p></figcaption></figure>
+
+<figure><img src="broken-reference" alt=""><figcaption><p>Key Question settings can be customized.</p></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/image (2).png" alt="" width="402"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
@@ -74,7 +78,7 @@ You can add multiple titles to each step by repeating the above process, generat
 
 * Once added, these titles will be displayed in the 'Interested' contact summary section.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-17 at 17.06.19 copy.png" alt=""><figcaption></figcaption></figure>
 
 * For Webhooks, the summary will be structured as follows:
 
