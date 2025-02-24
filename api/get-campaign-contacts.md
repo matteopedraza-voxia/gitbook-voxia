@@ -14,9 +14,9 @@ layout:
 
 # Get Campaign Contacts
 
-{% swagger src="../.gitbook/assets/openapi.json" path="/campaigns/{campaignId}/contacts" method="get" %}
+{% openapi src="../.gitbook/assets/openapi.json" path="/campaigns/{campaignId}/contacts" method="get" %}
 [openapi.json](../.gitbook/assets/openapi.json)
-{% endswagger %}
+{% endopenapi %}
 
 
 

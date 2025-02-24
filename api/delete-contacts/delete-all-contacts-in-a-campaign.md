@@ -14,9 +14,9 @@ layout:
 
 # Delete All Contacts in a Campaign
 
-{% swagger src="https://api.voxia.ai/openapi-json" path="/campaigns/{campaignId}/contacts" method="delete" %}
+{% openapi src="https://api.voxia.ai/openapi-json" path="/campaigns/{campaignId}/contacts" method="delete" %}
 [https://api.voxia.ai/openapi-json](https://api.voxia.ai/openapi-json)
-{% endswagger %}
+{% endopenapi %}
 
 {% hint style="info" %}
 To check how to set the API Key credentials, go to the [Authorization ](../authorization.md)tab.

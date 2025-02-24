@@ -14,9 +14,9 @@ layout:
 
 # Get Organization Campaigns
 
-{% swagger src="../.gitbook/assets/OpenAPI_Oct14.json" path="/campaigns" method="get" %}
+{% openapi src="../.gitbook/assets/OpenAPI_Oct14.json" path="/campaigns" method="get" %}
 [OpenAPI_Oct14.json](../.gitbook/assets/OpenAPI_Oct14.json)
-{% endswagger %}
+{% endopenapi %}
 
 {% hint style="info" %}
 To check how to set the API Key credentials, go to the [Authorization ](authorization.md)tab.

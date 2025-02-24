@@ -14,7 +14,7 @@ layout:
 
 # Get Contact by Contact ID
 
-{% swagger src="../.gitbook/assets/openapi.json" path="/campaigns/{campaignId}/contacts/{contactId}" method="get" %}
+{% openapi src="../.gitbook/assets/openapi.json" path="/campaigns/{campaignId}/contacts/{contactId}" method="get" %}
 [openapi.json](../.gitbook/assets/openapi.json)
-{% endswagger %}
+{% endopenapi %}
 

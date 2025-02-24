@@ -18,9 +18,9 @@ layout:
 The API call adds the updated contact to the specified campaign in Voxia. If the phone number is already present on this campaign, it will update the name and other fields based on the latest invocation.
 {% endhint %}
 
-{% swagger src="../.gitbook/assets/openapi (2).json" path="/campaigns/{campaignId}/contacts" method="post" %}
+{% openapi src="../.gitbook/assets/openapi (2).json" path="/campaigns/{campaignId}/contacts" method="post" %}
 [openapi (2).json](<../.gitbook/assets/openapi (2).json>)
-{% endswagger %}
+{% endopenapi %}
 
 
 

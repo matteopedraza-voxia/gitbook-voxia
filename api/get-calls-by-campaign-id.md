@@ -14,9 +14,9 @@ layout:
 
 # Get Calls by Campaign ID
 
-{% swagger src="../.gitbook/assets/openapi (3).json" path="/campaigns/{campaignId}/calls" method="get" %}
+{% openapi src="../.gitbook/assets/openapi (3).json" path="/campaigns/{campaignId}/calls" method="get" %}
 [openapi (3).json](<../.gitbook/assets/openapi (3).json>)
-{% endswagger %}
+{% endopenapi %}
 
 {% hint style="info" %}
 To check how to set the API Key credentials, go to the [Authorization ](authorization.md)tab.

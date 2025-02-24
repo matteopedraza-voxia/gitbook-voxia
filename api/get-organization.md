@@ -14,9 +14,9 @@ layout:
 
 # Get Organization
 
-{% swagger src="../.gitbook/assets/openapiOrganizationIncluded.json" path="/organization" method="get" %}
+{% openapi src="../.gitbook/assets/openapiOrganizationIncluded.json" path="/organization" method="get" %}
 [openapiOrganizationIncluded.json](../.gitbook/assets/openapiOrganizationIncluded.json)
-{% endswagger %}
+{% endopenapi %}
 
 
 
