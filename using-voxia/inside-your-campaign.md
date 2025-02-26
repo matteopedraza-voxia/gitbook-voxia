@@ -16,7 +16,7 @@ layout:
 
 Once you enter your campaign in the Voxia platform, you are greeted with a comprehensive overview of your campaign's performance and status.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-04-28 at 0.51.50.png" alt=""><figcaption><p>Campaign dashboard example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-18 at 11.59.46.png" alt=""><figcaption><p>Campaign dashboard example.</p></figcaption></figure>
 
 #### Here’s what you’ll find:
 
@@ -31,3 +31,11 @@ Once you enter your campaign in the Voxia platform, you are greeted with a compr
 * **Functionality Buttons**: At the top right, you have buttons for various actions such as editing the campaign, testing calls, and adding new contacts.
 * **Navigation Panel**: On the left side, there's a navigation panel that allows you to quickly access different parts of the Voxia platform such as new campaign creation, campaign overview, integrations, API keys, and phone number management.
 * **User Information**: At the bottom left, you can see your user role and a unique identifier for your user account.
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-18 at 14.33.11 (1).png" alt=""><figcaption><p>You will be shown a list of your test calls for each campaign.</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-18 at 14.44.26.png" alt=""><figcaption><p>Enter contact information before your test call.</p></figcaption></figure>
+
+{% hint style="info" %}
+Test call history will be saved and shown next time you press the **Test Call** button.
+{% endhint %}
