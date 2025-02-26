@@ -22,7 +22,11 @@ This page helps you manage specific questions or situations that might arise dur
 * Press the `+` button to create a new scenario.
 * Choose a title for the scenario which represents a question or situation that might arise during the call.
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-25 at 13.15.40.png" alt=""><figcaption><p>Define a new Scenario or choose one from available examples.</p></figcaption></figure>
+
+{% hint style="info" %}
+Scenario examples are available at the bottom of the screen. These examples can be added and edited to better suit the campaign needs.
+{% endhint %}
 
 #### **Add Steps**
 
