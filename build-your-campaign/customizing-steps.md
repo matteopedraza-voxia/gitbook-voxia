@@ -18,7 +18,9 @@ This guide provides detailed instructions on how to personalize the dialogue and
 
 * **Add Call Steps**: Click the `New Step` button to begin adding steps that the assistant will follow during the call.
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-17 at 17.48.57.png" alt=""><figcaption><p>Adding a call step.</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption><p>Call step added.</p></figcaption></figure>
 
 * **Schedule Meetings**:
   * Press the `Schedule a Meeting` button.
@@ -30,7 +32,7 @@ This guide provides detailed instructions on how to personalize the dialogue and
     * **Avoid Calling**: Select this option to prevent the assistant from making calls when no slots are available.
     * **Use Fallback Phrase**: Choose this option to have the assistant use a fallback phrase. Upon selection, a text field will open where you can insert the specific sentence the assistant should say.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-08-16 at 19.23.14 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-08-16 at 19.23.14 (1).png" alt=""><figcaption><p>Scheduling a meeting from a step.</p></figcaption></figure>
 
 {% hint style="warning" %}
 Note that to add this step, you need to have an **`Email`** for each contact.
@@ -44,7 +46,7 @@ Note that to add this step, you need to have an **`Email`** for each contact.
 
 
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>Forwarding a call with a step.</p></figcaption></figure>
 
 *   **Setup SMS**:&#x20;
 
@@ -53,27 +55,27 @@ Note that to add this step, you need to have an **`Email`** for each contact.
 
 
 
-    <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-17 at 18.23.47.png" alt=""><figcaption><p>Setting up an SMS within a step.</p></figcaption></figure>
 
-#### **Editing Steps**
+**Editing Steps**
 
 * **Reorder Steps**: Long press and drag a step number to change the order.
-* **Step Options**: To manage the content of a step, click the `•••` next to the step. You can:
+* **Step Options**: To manage the content of a step, click the buttons on the right. You can:
   * **Play**: Hear how the sentence will be said.
-  * **Rephrase**: Generate a new version of the sentence
+  * **Rephrase**: Generate a new version of the sentence.
   * **Delete Step**: Remove the step from the script.
 
-<figure><img src="../.gitbook/assets/image (26).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-17 at 18.26.14.png" alt=""><figcaption><p>You can play, rephrase and Delete each step.</p></figcaption></figure>
 
 #### **Call Script Variables**
 
-* **Add Variables**: Click the icon next to the last variable under each step to open the variable entry window.
+* **Add Variables**: Click the  `+`  icon under each step to open the variable entry window.
 
-<figure><img src="../.gitbook/assets/image (27).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-17 at 17.55.01.png" alt=""><figcaption><p>Adding variables to a step.</p></figcaption></figure>
 
-* **Enter and Save Variables**: In the window that opens, enter the variables you need and press enter after each one to confirm. Once you have finished adding all the variables, click the `Save` button to apply the changes.
+* **Enter and Save Variables**: In the window that opens, type in the variables you need and press enter after each one to confirm. Once you have finished adding all the variables, click the `Save` button to apply the changes.
 
-<figure><img src="../.gitbook/assets/image (30).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-17 at 18.02.50.png" alt=""><figcaption><p>Creating a new variable on a step.</p></figcaption></figure>
 
 {% hint style="info" %}
 Variables need to be added through uploading contacts. See [API documentation](../api/add-contacts.md) and [uploading contacts](../using-voxia/uploading-contacts.md) pages for more details.

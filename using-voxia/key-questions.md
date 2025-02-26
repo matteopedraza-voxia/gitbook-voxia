@@ -16,7 +16,7 @@ layout:
 
 By adding Key Questions to your script steps, you create a handy reference for quick analysis and data retrieval. This section takes place under the campaign summary:
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-26 at 09.31.17.png" alt=""><figcaption><p>Key questions will be listed in the Post-call section.</p></figcaption></figure>
 
 ### Summary and Post-Processing
 
@@ -37,13 +37,9 @@ There are two types of Key Questions:
 * Find the step number located on the left side of the step you want to summarize.
 * Click on the step number. This action will open a window to set the Key for the step.
 
-<figure><img src="broken-reference" alt=""><figcaption><p>Press the star icon left to the step to create your Key Question.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-14 at 18.05.46.png" alt=""><figcaption><p>Press the star icon to set a step as key question.</p></figcaption></figure>
 
-<figure><img src="broken-reference" alt=""><figcaption><p>Key Question settings can be customized.</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="402"><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-02-14 at 18.07.17.png" alt=""><figcaption></figcaption></figure>
 
 * Title, Description and Key Type will be automatically created for your Key Question according to the step description. This is data that can be changed.
 * There are several types of question to select according to the desired output needed:
