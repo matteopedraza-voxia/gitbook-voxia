@@ -37,6 +37,8 @@ There are two types of Key Questions:
 * Find the step number located on the left side of the step you want to summarize.
 * Click on the step number. This action will open a window to set the Key for the step.
 
+<figure><img src="broken-reference" alt=""><figcaption><p>Press the star icon left to the step to create your Key Question.</p></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/Screenshot 2025-02-14 at 18.05.46.png" alt=""><figcaption><p>Press the star icon to set a step as key question.</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-02-14 at 18.07.17.png" alt=""><figcaption></figcaption></figure>
