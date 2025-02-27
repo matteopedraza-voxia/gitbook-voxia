@@ -20,7 +20,7 @@ Once you allow the connection, you will notice that the Slack feature is shown a
 
 ### Setting your Campaign with the integration
 
-* Go to the desired campaign.
+* Go to your desired campaign.
 * Click on "Edit" to enter the Setup section.
 * At the bottom of the Setup section, you will find the Slack integration configuration as Connected.
 

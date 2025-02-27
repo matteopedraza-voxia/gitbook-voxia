@@ -31,7 +31,7 @@ Voxia efficiently manages both inbound and outbound calls. Follow this step-by-s
 
 ### Starting Your Campaign
 
-* **Start from Scratch**: If you prefer to manually create your campaign script from the very beginning, click the `Start From Scratch` button located at the top right of the generate script window.
+* **Start from Scratch**: If you prefer to manually create your campaign script from the very beginning, close the Generate Script window and start adding new steps.
 * **Generate Campaign**: After filling in the necessary details:
   * Click the **Generate** button.
   * Wait for the campaign generation to complete. During this time, you can edit scenarios or set up your campaign using the top navigation bar.

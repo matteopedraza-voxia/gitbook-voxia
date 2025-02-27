@@ -1,4 +1,5 @@
 ---
+description: Get Campaign endpoint
 layout:
   title:
     visible: true

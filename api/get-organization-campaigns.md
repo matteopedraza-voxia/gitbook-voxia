@@ -1,4 +1,5 @@
 ---
+description: Get Organization campaigns endpoint
 layout:
   title:
     visible: true

@@ -16,7 +16,9 @@ layout:
 
 ### What is Voxia?
 
-Our platform, featuring 24/7/365 AI Agents, is reshaping how businesses engage with customers in areas like support, success, and meeting scheduling. By leveraging cutting-edge voice technology, our AI agents go beyond traditional interaction - they dynamically engage in complex tasks such as live-action meeting booking. Our focus on enhancing customer experience and business efficiency is evidenced by our notable improvements in lead engagement and appointment scheduling efficiency. Voxia is not just meeting the market need for continuous, efficient customer service; we are setting new standards for AI-powered communication solutions in the fast-paced business world. Join us in leading the transformation in AI-driven customer interactions.
+Our platform, featuring 24/7/365 AI Agents, is reshaping how businesses engage with customers in areas like support, success, and meeting scheduling. By leveraging cutting-edge voice technology, our AI agents go beyond traditional interaction - they dynamically engage in complex tasks such as live-action meeting booking.&#x20;
+
+Our focus on enhancing customer experience and business efficiency is evidenced by our notable improvements in lead engagement and appointment scheduling efficiency. Voxia is not just meeting the market need for continuous, efficient customer service; we are setting new standards for AI-powered communication solutions in the fast-paced business world. Join us in leading the transformation in AI-driven customer interactions.
 
 ### **Outbound Operations**
 

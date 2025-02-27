@@ -15,7 +15,7 @@ layout:
 
 # Authorization
 
-API Key authorization is a security mechanism that ensures only authenticated users can access the API. After [generating your API Key](generate-api-key.md), you can securely pass your API Key when making API requests, ensuring a seamless and secure integration between your application and our services.
+API Key authorization is a security mechanism that ensures only authenticated users can access the API. After [generating your API Key](generate-api-key.md), you can securely pass your APIKey when making API requests, ensuring a seamless and secure integration between your application and our services.
 
 #### Header format
 

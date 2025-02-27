@@ -14,8 +14,6 @@ layout:
 
 # Cal.com Integration
 
-Integrate Cal.com with Voxia to seamlessly schedule meetings. This integration allows you to leverage the power of Cal.com’s scheduling capabilities directly through Voxia’s voice agents, streamlining your scheduling process and improving efficiency.&#x20;
-
 Seamlessly schedule meetings by integrating Cal.com with Voxia. This integration enables you to leverage Cal.com’s scheduling capabilities directly through Voxia’s voice agents, streamlining the scheduling process and improving efficiency.
 
 ### Connecting Cal.com to Voxia

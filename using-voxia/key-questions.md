@@ -33,7 +33,7 @@ There are two types of Key Questions:
 
 #### Step Key Questions
 
-* Navigate to the script where you want to add Key Questions.
+* Navigate to the script where you want to add the Key Questions.
 * Find the step number located on the left side of the step you want to summarize.
 * Click on the step number. This action will open a window to set the Key for the step.
 

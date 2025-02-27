@@ -18,7 +18,7 @@ Subaccounts allow organizations to manage multiple accounts under one main accou
 
 ### Creating a Subaccount
 
-1. **Access Settings**: Navigate to the left side bar and click on _Settings_.
+1. **Access Settings**: Navigate to the left sidebar and click on _Settings_.
 2. **Enable Subaccounts**: At the top right, press on the `Subaccounts` option.
 3. **Create Subaccount**: Click on `Create subaccount`, and enter a name for the subaccount and click on `Create`.
 

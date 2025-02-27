@@ -27,7 +27,7 @@ This guide provides detailed instructions on how to personalize the dialogue and
   * For scheduling, connect to Cal.com through the integrations tab.
   * Before offering time slots from your account, decide on the content for the assistant to say.
   * Choose the relevant event from the dropdown.
-  * Define how many days in advance clients can schedule meetings by setting the _Schedule days ahead_ field.
+  * Define how many days in advance clients can schedule meetings by setting the _Schedule days ahead_ field. We recommend not to use more than 14 days in advance.
   * For scenarios when no time slots are available, configure how the assistant should react:
     * **Avoid Calling**: Select this option to prevent the assistant from making calls when no slots are available.
     * **Use Fallback Phrase**: Choose this option to have the assistant use a fallback phrase. Upon selection, a text field will open where you can insert the specific sentence the assistant should say.

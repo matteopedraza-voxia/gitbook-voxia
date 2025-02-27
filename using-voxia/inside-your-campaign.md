@@ -20,7 +20,7 @@ Once you enter your campaign in the Voxia platform, you are greeted with a compr
 
 #### Here’s what you’ll find:
 
-* **Campaign Status**: At the top, you can see the name of the campaign and a colored dot indicating the campaign's current status (e.g., green for active, orange for stopped).
+* **Campaign Status**: At the top, you can see the name of the campaign and a colored area indicating the campaign's current status (e.g., green for active, orange for stopped).
 * **Contact Summary**: A bar graph displays the total number of contacts broken down by status: Interested, Not interested, Unreached, Failed, Do not call, Wrong number, and Call me later. This provides a quick snapshot of your campaign's engagement levels.
 * **Contact List**: Below the summary, there is a detailed list of contacts including their name, phone number, the number of call attempts, the date of the last attempt, call duration, and the status of the last call (e.g., Interested, Not Interested, Wrong Number).
 * **Campaign Statistics**:

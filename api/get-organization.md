@@ -1,4 +1,5 @@
 ---
+description: Get Organization endpoint
 layout:
   title:
     visible: true

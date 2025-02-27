@@ -15,7 +15,7 @@ layout:
 # Bring Your Own Carrier
 
 {% hint style="info" %}
-Voxia supports incoming and outgoing calls. Your SIP provider may need our IP address, `35.245.182.192`, to ensure connectivity.
+Voxia supports incoming and outgoing calls. Your SIP provider may need our IP address: `35.245.182.192`, to ensure connectivity.
 {% endhint %}
 
 To integrate your own SIP carrier with Voxia, follow the steps below:

@@ -1,4 +1,5 @@
 ---
+description: Get Webhook endpoint
 layout:
   title:
     visible: true

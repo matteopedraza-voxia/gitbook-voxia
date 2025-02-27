@@ -17,7 +17,7 @@ layout:
 ### Adding Contacts Manually
 
 * **Navigate to Your Campaign**: From the main dashboard, click on the campaign you want to add contacts to.
-* **Add Contacts**: Click on the "Add Contacts" button located on the top right of the campaign page. In the window that opens, click on the "Add Manually" tab at the top.
+* **Add Contacts**: Click on the "Add Contacts" button located on the top right of the campaign page. In the window that will be opened, click on the "Add Manually" tab at the top.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-02-14 at 12.35.18.png" alt=""><figcaption></figcaption></figure>
 

@@ -16,7 +16,7 @@ layout:
 
 #### Terms Overview
 
-These Terms of Service ("Terms") constitute a legal contract between Amy Insight Inc., LLC ("Voxia") and the individual or entity using or accessing the Voxia AI Calls platform services ("Subscriber"). These Terms encompass Voxia's platform services, including programs, features, account portals, and technical support ("Services"). By accessing or using the Services, Subscriber, whether paid or unpaid, agrees to comply with these Terms.
+These Terms of Service ("Terms") constitute a legal contract between Amy Insight Inc., LLC ("Voxia") and the individual or entity using or accessing the Voxia AI Calls platform services ("Subscriber"). These **Terms** encompass Voxia's platform services, including programs, features, account portals, and technical support ("Services"). By accessing or using the Services, Subscriber, whether paid or unpaid, agrees to comply with these Terms.
 
 #### Subscription
 

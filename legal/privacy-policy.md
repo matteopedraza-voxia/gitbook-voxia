@@ -18,7 +18,7 @@ Voxia (“Voxia,” “we,” “us,” “our”) respects your privacy. This P
 
 This Privacy Policy applies only to data collected by Voxia through the Site and Services and does not apply to our privacy practices with regard to data we process on behalf of companies for whom we perform work (“Clients”). For information about the collection, use, and disclosure of your information by our Clients or by us on behalf of our Clients, please review the relevant Client’s privacy policy.
 
-Please carefully read this Privacy Policy, which is part of our Terms of Use, before using our Site and/or Services. If you do not agree with the Terms of Use and/or this Privacy Policy, you must refrain from using out Site and/or Services. By Accessing or using our Site and/or Services you agree to our use of your information consistent with the Terms of Use and this Privacy Policy.
+Please carefully read this Privacy Policy, which is part of our Terms of Use, before using our Site and/or Services. If you do not agree with the Terms of Use and/or this Privacy Policy, you must refrain from using out Site and/or Services. By accessing or using our Site and/or Services you agree to our use of your information consistent with the Terms of Use and this Privacy Policy.
 
 ### CHANGES TO THIS PRIVACY POLICY
 

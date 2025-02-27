@@ -14,7 +14,9 @@ layout:
 
 # Validating Webhook Signatures
 
-When integrating with Voxia, it's important to ensure that the webhook payloads you receive are indeed from Voxia. To facilitate this, Voxia signs each payload with a private key. Your system can verify these payloads using the corresponding public key, which Voxia provides. This process guarantees the integrity and authenticity of the data sent to your system.
+When integrating with Voxia, it's important to ensure that the webhook payloads you receive are indeed from Voxia. To facilitate this, Voxia signs each payload with a private key.&#x20;
+
+Your system can verify these payloads using the corresponding public key, which Voxia provides. This process guarantees the integrity and authenticity of the data sent to your system.
 
 ### **Overview of the Process**
 

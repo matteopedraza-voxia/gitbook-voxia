@@ -1,4 +1,5 @@
 ---
+description: Delete contact endpoint
 layout:
   title:
     visible: true

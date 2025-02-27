@@ -38,7 +38,7 @@ Twilio official documentation [link](https://help.twilio.com/articles/223183168-
 ### Retrieve Your Account SID and Auth Token
 
 1. **Access the Console Dashboard:** Once logged in, your Twilio Console dashboard will display.
-2. **Find the SID and Token:** On the dashboard, look for the ‘Account Info’ section. Here you will find your Account SID and Auth Token.
+2. **Find the SID and Token:** On the dashboard, go to the ‘Account Info’ section. Here you will find your Account SID and Auth Token.
 
 <div align="center" data-full-width="false"><figure><img src="../.gitbook/assets/Twilio auth.png" alt="" width="563"><figcaption></figcaption></figure></div>
 

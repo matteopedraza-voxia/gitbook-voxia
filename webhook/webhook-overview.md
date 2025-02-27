@@ -15,7 +15,7 @@ layout:
 # Webhook Overview
 
 {% hint style="info" %}
-To receive information after the call, add a Webhook URL.
+To receive information after the call, add a Webhook URL to your campaign.
 {% endhint %}
 
 ### Configure a Webhook

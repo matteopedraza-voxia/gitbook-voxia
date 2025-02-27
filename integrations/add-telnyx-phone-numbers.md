@@ -18,7 +18,7 @@ This document provides a guide on a Telnyx account, purchasing phone numbers, re
 
 ### Step 1: Buy a Telnyx phone number
 
-* Go to the _**Numbers**_ tab on your Telnyx sidebar.
+* Go to the _**Numbers**_ tab on your Telnyx left sidebar.
 * If you don't already have a phone number, click on the `Buy number` to get a phone number in Telnyx.
 
 

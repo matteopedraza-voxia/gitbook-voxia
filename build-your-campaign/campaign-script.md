@@ -51,7 +51,7 @@ Creating a campaign script involves setting up a series of decision points and r
 
 * To modify your script effectively, you can move nodes, delete unnecessary subflows, or adjust branching logic.
 * Moving or Deleting **Steps**:
-  * Position your cursor over the subflow, click on the `•••` icon to the right of the subflow name.
+  * Position your cursor over the Subflow, click on the `•••` icon to the right of the subflow name.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-02-14 at 16.43.35.png" alt=""><figcaption><p>You can Move, Delete or Delete with subflows for each Step.</p></figcaption></figure>
 

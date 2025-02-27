@@ -14,7 +14,7 @@ layout:
 
 # Campaign Scenarios
 
-This page helps you manage specific questions or situations that might arise during a call, ensuring that the agent can handle them effectively.
+This page helps you manage specific questions or situations that might come up during a call, ensuring that the agent can handle them effectively.
 
 ### **Add a New Scenario**
 

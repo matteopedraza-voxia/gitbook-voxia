@@ -14,7 +14,7 @@ layout:
 
 # Campaign Setup
 
-The Campaign Setup allows you to configure essential details for your campaign, including the campaign name, company information, phone numbers, and various settings. Proper setup ensures that your campaign runs smoothly and effectively aligns with your business goals.
+The Campaign Setup allows you to configure essential details for your campaign, including the campaign name, company information, phone numbers, and various settings. A proper setup ensures that your campaign runs smoothly and effectively aligns with your business goals.
 
 ## **Setting Up a Campaign**
 

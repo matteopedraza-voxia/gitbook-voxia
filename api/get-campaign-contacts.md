@@ -1,4 +1,5 @@
 ---
+description: Get Contacts endpoint
 layout:
   title:
     visible: true

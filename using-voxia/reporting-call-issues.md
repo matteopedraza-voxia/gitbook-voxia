@@ -14,7 +14,7 @@ layout:
 
 # Reporting Call Issues
 
-If you ever run into any problems during your calls, we want to hear about it. Your feedback is invaluable in helping us identify and address issues, ensuring that your experience with our service is smooth and productive. Follow the steps below to let us know, so we can continue to enhance Voxia for all users.
+If you ever run into any problems during your call, we want to hear about it. Your feedback is invaluable in helping us identify and address issues, ensuring that your experience with our service is smooth and productive. Follow the steps below to let us know, so we can continue to enhance Voxia for all users.
 
 ## Select Relevant Contact
 

@@ -23,7 +23,7 @@ This guide will help you easily find the ID for a specific campaign within your 
 https://app.voxia.ai/campaigns/{campaignId}
 ```
 
-The part marked `{campaignId}` is your unique campaign ID.
+The section marked `{campaignId}` is your unique campaign ID.
 
 * You can use this campaign ID as required for API calls, and other integrations where a campaign identifier is necessary.
 

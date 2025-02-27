@@ -16,7 +16,7 @@ layout:
 
 This guide provides step-by-step instructions on how to generate an API key. Follow these steps to create and access your API key:
 
-* Log in to your account.
+* Log in to your Voxia account.
 * On the left sidebar of the dashboard, locate and click on the **API Keys** tab. This will take you to the section where you can manage all your API keys.
 * Click on the **Add API Key** button located at the top right corner of the API Keys page. A dialog box will appear prompting you to name your new API key.
 * **Enter a name** for your API key, and click on **Create** to generate the API key.
