@@ -30,8 +30,12 @@ The resulting signature is then attached to the webhook request within a custom 
 
 Upon receiving a webhook, follow these steps to verify its authenticity:
 
+{% hint style="warning" %}
+For whitelabel, you’ll receive the signature as `X-Signature` instead of `X-Voxia-Signature`.
+{% endhint %}
+
 1. Extract both the payload and the `X-Voxia-Signature` header from the incoming request.
-2. Use the public key to verify the signature instead of computing the HMAC yourself. In this case, the public key would be used to check that the X-Voxia-Signature matches a valid cryptographic signature for the received payload.
+2. Use the public key to verify the signature instead of computing the HMAC yourself. In this case, the public key would be used to check that the `X-Voxia-Signature` matches a valid cryptographic signature for the received payload.
 3. Compare the result:
    * If the public key verification succeeds, then the payload is confirmed as authentic.
    * If the verification fails, the payload should be considered compromised or originating from an untrusted source and discarded.
